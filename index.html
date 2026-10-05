@@ -25,6 +25,7 @@
             height: clamp(190px, 25vh, 280px);
             position: relative;
             margin: 20px 0;
+            display: inline-block; /* Ensure it stays inline with the letters */
         }
 
         .door-frame {
@@ -143,13 +144,14 @@
         .breve::before {
             content: '';
             position: absolute;
-            top: -15px;
+            top: -15px; /* Adjust to sit above letter */
             left: 15%;
             width: 70%;
             height: 15px;
             border: 6px solid #ef4444; 
             border-top: none;
             border-radius: 0 0 40px 40px;
+            box-sizing: border-box; /* Fix curve rendering */
         }
 
         /* Main word display area */
@@ -160,7 +162,8 @@
             justify-content: center;
             width: 100%;
             flex-grow: 1;
-            min-height: 0;
+            min-height: 250px; /* Give it enough height to fit the door */
+            margin: 20px 0; /* Add spacing around it */
         }
 
         /* Interactive buttons */
@@ -221,12 +224,12 @@
         <div class="bg-white p-4 md:p-6 rounded-2xl shadow-xl w-full border-4 border-yellow-400 relative flex flex-col items-center flex-grow min-h-0">
             
             <!-- Instructions -->
-            <div class="text-center mb-2 flex-shrink-0">
+            <div class="text-center mb-2 flex-shrink-0 w-full">
                 <h2 id="instruction-text" class="text-lg md:text-2xl font-bold text-gray-700">Click the door to open it!</h2>
             </div>
 
             <!-- The Visual Representation -->
-            <div class="word-display-area min-h-0">
+            <div class="word-display-area">
                 
                 <!-- The Consonant & Vowel (Always on the left) -->
                 <div class="base-word-container">
@@ -245,13 +248,13 @@
                         <div class="door-panel top"></div>
                         <div class="door-panel bottom"></div>
                         <!-- The consonant that closes the syllable -->
-                        <span id="coda-text" class="letter consonant-container text-black">t</span>
+                        <span id="coda-text" class="letter consonant-container">t</span>
                     </div>
                 </div>
             </div>
 
             <!-- Self-Check Read Button -->
-            <button onclick="playCurrentWordSound()" class="mt-2 mb-2 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded-full shadow-lg text-base md:text-xl flex-shrink-0 btn">
+            <button onclick="playCurrentWordSound()" class="mt-4 mb-2 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded-full shadow-lg text-base md:text-xl flex-shrink-0 btn z-10 relative">
                 🔊 Check Pronunciation
             </button>
 
