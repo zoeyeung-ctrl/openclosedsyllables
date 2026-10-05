@@ -1,0 +1,536 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red255\green255\blue254;\red251\green0\blue7;
+\red0\green0\blue0;\red42\green42\blue42;\red107\green0\blue1;\red0\green0\blue255;\red9\green60\blue148;
+\red144\green1\blue18;\red15\green112\blue1;\red19\green118\blue70;\red14\green110\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c50196\c50196\c50196;\cssrgb\c100000\c100000\c99608;\cssrgb\c100000\c0\c0;
+\cssrgb\c0\c0\c0;\cssrgb\c21961\c21961\c21961;\cssrgb\c50196\c0\c0;\cssrgb\c0\c0\c100000;\cssrgb\c1569\c31765\c64706;
+\cssrgb\c63922\c8235\c8235;\cssrgb\c0\c50196\c0;\cssrgb\c3529\c52549\c34510;\cssrgb\c0\c50196\c50196;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh14840\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 html\cf0 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf8 \strokec8 "en"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf8 \strokec8 "UTF-8"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 meta\cf0 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf8 \strokec8 "viewport"\cf0 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf8 \strokec8 "width=device-width, initial-scale=1.0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \strokec5 Open & Closed Syllables - The Magic Door\cf6 \strokec6 </\cf7 \strokec7 title\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf0 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf8 \strokec8 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 @import\cf0 \strokec5  \cf9 \strokec9 url\cf0 \strokec5 (\cf10 \strokec10 'https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap'\cf0 \strokec5 );\cb1 \
+\
+\cb3         \cf7 \strokec7 body\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 font-family:\cf0 \strokec5  \cf10 \strokec10 'Comic Neue'\cf0 \strokec5 , \cf9 \strokec9 cursive\cf0 \strokec5 , \cf9 \strokec9 sans-serif\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 #f0fdf4\cf0 \strokec5 ; \cf11 \strokec11 /* Light green background */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 margin:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 padding:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf9 \strokec9 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 flex-direction:\cf0 \strokec5  \cf9 \strokec9 column\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 100\cf9 \strokec9 dvh\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 overflow:\cf0 \strokec5  \cf9 \strokec9 hidden\cf0 \strokec5 ; \cf11 \strokec11 /* Prevent scrolling on iPad */\cf0 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf7 \strokec7 .door-container\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 perspective:\cf0 \strokec5  \cf12 \strokec12 1200px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf9 \strokec9 clamp(\cf12 \strokec12 110px\cf0 \strokec5 , \cf12 \strokec12 15vw\cf0 \strokec5 , \cf12 \strokec12 160px\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf9 \strokec9 clamp(\cf12 \strokec12 190px\cf0 \strokec5 , \cf12 \strokec12 25vh\cf0 \strokec5 , \cf12 \strokec12 280px\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 relative\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 margin:\cf0 \strokec5  \cf12 \strokec12 20px\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf7 \strokec7 .door-frame\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 #e5e7eb\cf0 \strokec5 ; \cf11 \strokec11 /* Light gray inside */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 12px\cf0 \strokec5  \cf9 \strokec9 solid\cf0 \strokec5  \cf9 \strokec9 #8B4513\cf0 \strokec5 ; \cf11 \strokec11 /* SaddleBrown frame */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 8px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf9 \strokec9 inset\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 20px\cf0 \strokec5  \cf9 \strokec9 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.2\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf9 \strokec9 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 align-items:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 justify-content:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* The actual Door that swings */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .door\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 #D2691E\cf0 \strokec5 ; \cf11 \strokec11 /* Chocolate brown door */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5  \cf9 \strokec9 solid\cf0 \strokec5  \cf9 \strokec9 #8B4513\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 4px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf11 \strokec11 /* Hinge on the right side so it swings out to the right */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 transform-origin:\cf0 \strokec5  \cf9 \strokec9 right\cf0 \strokec5 ; \cb1 \
+\cb3             \cf4 \strokec4 transition:\cf0 \strokec5  \cf9 \strokec9 transform\cf0 \strokec5  \cf12 \strokec12 0.6s\cf0 \strokec5  \cf9 \strokec9 cubic-bezier(\cf12 \strokec12 0.4\cf0 \strokec5 , \cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 0.2\cf0 \strokec5 , \cf12 \strokec12 1\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 2\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 cursor:\cf0 \strokec5  \cf9 \strokec9 pointer\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf12 \strokec12 -5px\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 15px\cf0 \strokec5  \cf9 \strokec9 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.3\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf9 \strokec9 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 align-items:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 justify-content:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Doorknob (moved to the left side) */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .door::before\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 content:\cf0 \strokec5  \cf10 \strokec10 ''\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 10px\cf0 \strokec5 ; \cf11 \strokec11 /* Knob on the left edge */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 50%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 transform:\cf0 \strokec5  \cf9 \strokec9 translateY(\cf12 \strokec12 -50%\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 20px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 20px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 #FFD700\cf0 \strokec5 ; \cf11 \strokec11 /* Gold */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 50%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf9 \strokec9 inset\cf0 \strokec5  \cf12 \strokec12 -2px\cf0 \strokec5  \cf12 \strokec12 -2px\cf0 \strokec5  \cf12 \strokec12 5px\cf0 \strokec5  \cf9 \strokec9 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.3\cf9 \strokec9 )\cf0 \strokec5 , \cf12 \strokec12 2px\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf12 \strokec12 5px\cf0 \strokec5  \cf9 \strokec9 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.2\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Panels to make it look like a real door */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .door-panel\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 70%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 35%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5  \cf9 \strokec9 solid\cf0 \strokec5  \cf9 \strokec9 #8B4513\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 15%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 rgba(\cf12 \strokec12 139\cf0 \strokec5 , \cf12 \strokec12 69\cf0 \strokec5 , \cf12 \strokec12 19\cf0 \strokec5 , \cf12 \strokec12 0.1\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .door-panel.top\cf0 \strokec5  \{ \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 10%\cf0 \strokec5 ; \}\cb1 \
+\cb3         \cf7 \strokec7 .door-panel.bottom\cf0 \strokec5  \{ \cf4 \strokec4 bottom:\cf0 \strokec5  \cf12 \strokec12 10%\cf0 \strokec5 ; \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* The open state class */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .door.open\cf0 \strokec5  \{\cb1 \
+\cb3             \cf11 \strokec11 /* Swing out to the right */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 transform:\cf0 \strokec5  \cf9 \strokec9 rotateY(\cf12 \strokec12 110deg\cf9 \strokec9 )\cf0 \strokec5 ; \cb1 \
+\cb3             \cf4 \strokec4 box-shadow:\cf0 \strokec5  \cf12 \strokec12 5px\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 15px\cf0 \strokec5  \cf9 \strokec9 rgba(\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0\cf0 \strokec5 ,\cf12 \strokec12 0.2\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Typography for the letters */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .letter\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 font-size:\cf0 \strokec5  \cf9 \strokec9 clamp(\cf12 \strokec12 4rem\cf0 \strokec5 , \cf12 \strokec12 12vh\cf0 \strokec5 , \cf12 \strokec12 7rem\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 font-weight:\cf0 \strokec5  \cf9 \strokec9 bold\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf9 \strokec9 #1f2937\cf0 \strokec5 ; \cf11 \strokec11 /* Dark gray/black */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 relative\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Base Word (Onset + Vowel) - stays on the left */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .base-word-container\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf9 \strokec9 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 align-items:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 margin-right:\cf0 \strokec5  \cf12 \strokec12 0px\cf0 \strokec5 ; \cb1 \
+\cb3             \cf4 \strokec4 padding-right:\cf0 \strokec5  \cf12 \strokec12 15px\cf0 \strokec5 ; \cf11 \strokec11 /* Spacing between vowel and door */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 gap:\cf0 \strokec5  \cf12 \strokec12 2px\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* The Consonant (lives on the door) */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .consonant-container\cf0 \strokec5  \{\cb1 \
+\cb3             \cf11 \strokec11 /* Text color matches door when open, changes to black when closing */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf9 \strokec9 #1f2937\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 z-index:\cf0 \strokec5  \cf12 \strokec12 3\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 transition:\cf0 \strokec5  \cf9 \strokec9 opacity\cf0 \strokec5  \cf12 \strokec12 0.3s\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\cb3         \cf7 \strokec7 .door.open\cf0 \strokec5  \cf7 \strokec7 .consonant-container\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 opacity:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ; \cf11 \strokec11 /* Hide the consonant when door swings away */\cf0 \cb1 \strokec5 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Macron (long vowel mark - horizontal line) */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .macron::before\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 content:\cf0 \strokec5  \cf10 \strokec10 ''\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 -5px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 10%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 80%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 6px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 #ef4444\cf0 \strokec5 ; \cf11 \strokec11 /* Red for emphasis */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 3px\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Breve (smile mark - curved) */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .breve::before\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 content:\cf0 \strokec5  \cf10 \strokec10 ''\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 absolute\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 top:\cf0 \strokec5  \cf12 \strokec12 -15px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 left:\cf0 \strokec5  \cf12 \strokec12 15%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 70%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 height:\cf0 \strokec5  \cf12 \strokec12 15px\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border:\cf0 \strokec5  \cf12 \strokec12 6px\cf0 \strokec5  \cf9 \strokec9 solid\cf0 \strokec5  \cf9 \strokec9 #ef4444\cf0 \strokec5 ; \cb1 \
+\cb3             \cf4 \strokec4 border-top:\cf0 \strokec5  \cf9 \strokec9 none\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-radius:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5  \cf12 \strokec12 40px\cf0 \strokec5  \cf12 \strokec12 40px\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Main word display area */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .word-display-area\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 position:\cf0 \strokec5  \cf9 \strokec9 relative\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 display:\cf0 \strokec5  \cf9 \strokec9 flex\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 align-items:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 justify-content:\cf0 \strokec5  \cf9 \strokec9 center\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 width:\cf0 \strokec5  \cf12 \strokec12 100%\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 flex-grow:\cf0 \strokec5  \cf12 \strokec12 1\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 min-height:\cf0 \strokec5  \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 /* Interactive buttons */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .btn\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 transition:\cf0 \strokec5  \cf9 \strokec9 all\cf0 \strokec5  \cf12 \strokec12 0.2s\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 transform:\cf0 \strokec5  \cf9 \strokec9 translateY(\cf12 \strokec12 0\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .btn:active\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 transform:\cf0 \strokec5  \cf9 \strokec9 translateY(\cf12 \strokec12 2px\cf9 \strokec9 )\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cb1 \
+\cb3         \cf11 \strokec11 /* Level styling */\cf0 \cb1 \strokec5 \
+\cb3         \cf7 \strokec7 .level-active\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 #3b82f6\cf0 \strokec5 ; \cf11 \strokec11 /* Blue-500 */\cf0 \cb1 \strokec5 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf9 \strokec9 white\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-color:\cf0 \strokec5  \cf9 \strokec9 #2563eb\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3         \cf7 \strokec7 .level-inactive\cf0 \strokec5  \{\cb1 \
+\cb3             \cf4 \strokec4 background-color:\cf0 \strokec5  \cf9 \strokec9 white\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 color:\cf0 \strokec5  \cf9 \strokec9 #4b5563\cf0 \strokec5 ;\cb1 \
+\cb3             \cf4 \strokec4 border-color:\cf0 \strokec5  \cf9 \strokec9 #d1d5db\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 style\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 head\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf7 \strokec7 body\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-gray-800 flex flex-col items-center h-[100dvh] overflow-hidden"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb3     \cf6 \strokec6 <\cf7 \strokec7 header\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full bg-blue-600 text-white p-2 md:p-4 shadow-md text-center flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 h1\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl md:text-4xl font-bold tracking-wider text-yellow-300 drop-shadow-md"\cf6 \strokec6 >\cf0 \strokec5 The Syllable Door\cf6 \strokec6 </\cf7 \strokec7 h1\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm md:text-lg mt-1 md:mt-2"\cf6 \strokec6 >\cf0 \strokec5 Open for a LONG sound. Close for a SHORT sound!\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 header\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 main\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex-grow w-full max-w-4xl p-2 md:p-4 flex flex-col items-center min-h-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf11 \strokec11 <!-- Controls & Status -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full bg-white rounded-xl shadow-md p-4 mb-2 md:mb-4 flex flex-row justify-between items-center gap-2 flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col items-start"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-gray-500 uppercase tracking-wide font-bold mb-1"\cf6 \strokec6 >\cf0 \strokec5 Select Level\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex gap-1 md:gap-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "btn-level-1"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "btn px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 font-bold shadow-sm text-sm md:text-base level-active"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "setLevel(1)"\cf6 \strokec6 >\cf0 \strokec5 Level 1\cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 ><\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] md:text-xs font-normal"\cf6 \strokec6 >\cf0 \strokec5 Real Words\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 ></\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "btn-level-2"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "btn px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 font-bold shadow-sm text-sm md:text-base level-inactive"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "setLevel(2)"\cf6 \strokec6 >\cf0 \strokec5 Level 2\cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 ><\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] md:text-xs font-normal"\cf6 \strokec6 >\cf0 \strokec5 Nonsense\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 ></\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "btn-level-3"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "btn px-2 md:px-4 py-1 md:py-2 rounded-lg border-2 font-bold shadow-sm text-sm md:text-base level-inactive"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "setLevel(3)"\cf6 \strokec6 >\cf0 \strokec5 Level 3\cf6 \strokec6 <\cf7 \strokec7 br\cf6 \strokec6 ><\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-[10px] md:text-xs font-normal"\cf6 \strokec6 >\cf0 \strokec5 Mixed\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 ></\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex flex-col items-end gap-1 md:gap-2"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-blue-50 p-2 md:p-3 rounded-lg border border-blue-100 min-w-[120px] md:min-w-[160px] flex flex-col items-center"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex justify-between w-full mb-1"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-xs text-blue-600 font-bold uppercase tracking-wide"\cf6 \strokec6 >\cf0 \strokec5 Word:\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "word-counter"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm md:text-lg font-bold text-blue-800"\cf6 \strokec6 >\cf0 \strokec5 1 / 30\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "nextWord()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-4 md:py-2 md:px-6 rounded-full shadow-md btn w-full text-sm md:text-base"\cf6 \strokec6 >\cf0 \strokec5 Next \uc0\u10132 \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf11 \strokec11 <!-- The Interactive Area -->\cf0 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "bg-white p-4 md:p-6 rounded-2xl shadow-xl w-full border-4 border-yellow-400 relative flex flex-col items-center flex-grow min-h-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             \cf11 \strokec11 <!-- Instructions -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-center mb-2 flex-shrink-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 h2\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "instruction-text"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-lg md:text-2xl font-bold text-gray-700"\cf6 \strokec6 >\cf0 \strokec5 Click the door to open it!\cf6 \strokec6 </\cf7 \strokec7 h2\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 <!-- The Visual Representation -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "word-display-area min-h-0"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cb1 \
+\cb3                 \cf11 \strokec11 <!-- The Consonant & Vowel (Always on the left) -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "base-word-container"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "onset-text"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "letter"\cf6 \strokec6 >\cf0 \strokec5 w\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "vowel-text"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "letter macron ml-2"\cf6 \strokec6 >\cf0 \strokec5 e\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                 \cf11 \strokec11 <!-- The Door Setup (Anchored to the right of the vowel) -->\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "door-container"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 <!-- Inside the frame (Empty space, reveals when door opens) -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "door-frame"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3                     \cf11 \strokec11 <!-- The Swinging Door (Holds the closing Consonant) -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf11 \strokec11 <!-- Door starts OPEN -->\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "the-door"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "door open"\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "toggleDoor()"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "door-panel top"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "door-panel bottom"\cf6 \strokec6 ></\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf11 \strokec11 <!-- The consonant that closes the syllable -->\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "coda-text"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "letter consonant-container text-black"\cf6 \strokec6 >\cf0 \strokec5 t\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 <!-- Self-Check Read Button -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 button\cf0 \strokec5  \cf4 \strokec4 onclick\cf6 \strokec6 =\cf8 \strokec8 "playCurrentWordSound()"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "mt-2 mb-2 bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 md:py-3 px-6 md:px-8 rounded-full shadow-lg text-base md:text-xl flex-shrink-0 btn"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \uc0\u55357 \u56586  Check Pronunciation\cb1 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 button\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 <!-- Feedback / Explanation Banner -->\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "feedback-banner"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "w-full max-w-2xl bg-blue-100 border-l-8 border-blue-500 p-2 md:p-4 rounded-r-lg shadow-sm flex-shrink-0 transform transition-all duration-300 overflow-y-auto max-h-[120px] md:max-h-[150px]"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "flex items-center gap-2 md:gap-4"\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "feedback-icon"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-2xl md:text-4xl"\cf6 \strokec6 >\cf0 \strokec5 \uc0\u55357 \u57002 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 h3\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "feedback-title"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-base md:text-xl font-bold text-blue-800"\cf6 \strokec6 >\cf0 \strokec5 Open Syllable\cf6 \strokec6 </\cf7 \strokec7 h3\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf7 \strokec7 p\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "feedback-desc"\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "text-sm md:text-lg text-blue-900 mt-1"\cf6 \strokec6 >\cf0 \strokec5 The door is open! The vowel \cf6 \strokec6 <\cf7 \strokec7 span\cf0 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf8 \strokec8 "font-bold underline text-red-600"\cf0 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf8 \strokec8 "feedback-vowel"\cf6 \strokec6 >\cf0 \strokec5 e\cf6 \strokec6 </\cf7 \strokec7 span\cf6 \strokec6 >\cf0 \strokec5  can shout its long name.\cf6 \strokec6 </\cf7 \strokec7 p\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3         \cf6 \strokec6 </\cf7 \strokec7 div\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 main\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 // --- Data Structure ---\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 // onset: Starting consonant(s)\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 // vowel: Vowel character\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 // coda: Closing consonant on the door\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 // openPronunciation: Custom spelling for TTS to read the long vowel sound correctly (e.g. "go" needs to be read with long o)\cf0 \cb1 \strokec5 \
+\cb3         \cf11 \strokec11 // closedPronunciation: Custom spelling for TTS to read the short vowel sound (e.g. "got")\cf0 \cb1 \strokec5 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  wordDatabase = \{\cb1 \
+\cb3             level1: [ \cf11 \strokec11 // Real Words\cf0 \cb1 \strokec5 \
+\cb3                 \{ onset: \cf10 \strokec10 "w"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "we"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "wet"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "h"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "n"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "he"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "hen"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "m"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "n"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "me"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "men"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "sh"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "d"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "she"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "shed"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "b"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "d"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "be"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "bed"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "g"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "go"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "got"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "n"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "no"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "not"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "s"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "so"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "sob"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "h"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "d"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "high"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "hid"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "fl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "flew"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "flub"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "m"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "me"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "met"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "w"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "we"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "web"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "n"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "d"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "no"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "nod"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "s"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "ck"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "so"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "sock"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "g"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "go"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "gob"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "pr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "pro"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "prop"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "h"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "high"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "hit"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "h"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "high"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "hip"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "h"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "hoe"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "hop"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "b"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "g"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "be"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "beg"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "b"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "bye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "bit"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "fr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "g"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "froh"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "frog"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "y"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "n"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "yo"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "yon"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "gl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "m"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "glue"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "glum"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "sp"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "d"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "spew"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "spud"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "pl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "m"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "ploo"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "plum"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "sh"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "ll"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "she"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "shell"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "z"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "zye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "zip"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "cl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "clye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "clip"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "gr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "gray"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "grab"\cf0 \strokec5  \}\cb1 \
+\cb3             ],\cb1 \
+\cb3             level2: [ \cf11 \strokec11 // Nonsense Words (Alien words) - Requires pronunciation hacks for TTS\cf0 \cb1 \strokec5 \
+\cb3                 \{ onset: \cf10 \strokec10 "r"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "row"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "rop"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "z"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "zee"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "zeb"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "v"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "m"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "vay"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "vam"\cf0 \strokec5  \}, \cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "k"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "kye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "kip"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "t"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "z"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "too"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "tuz"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "th"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "g"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "thee"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "theg"\cf0 \strokec5  \}, \cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "ch"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "m"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "cho"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "chom"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "p"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "v"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "pee"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "pev"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "sn"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "g"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "snye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "snig"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "dr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "z"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "droe"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "droz"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "b"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "f"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "bay"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "baf"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "j"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "jee"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "jep"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "l"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "lye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "lib"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "v"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "voe"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "vob"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "g"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "goo"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "gup"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "z"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "zay"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "zat"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "w"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "wye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "wib"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "fl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "m"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "flee"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "flem"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "st"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "g"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "stoe"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "stog"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "cr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "croo"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "crup"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "m"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "z"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "may"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "maz"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "sh"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "shay"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "shab"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "tr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "d"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "try"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "trid"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "n"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "f"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "noo"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "nuf"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "pl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "o"\cf0 \strokec5 , coda: \cf10 \strokec10 "n"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "ploe"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "plon"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "cl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "a"\cf0 \strokec5 , coda: \cf10 \strokec10 "g"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "clay"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "clag"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "dw"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "dwee"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "dwep"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "gl"\cf0 \strokec5 , vowel: \cf10 \strokec10 "i"\cf0 \strokec5 , coda: \cf10 \strokec10 "p"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "glye"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "glip"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "fr"\cf0 \strokec5 , vowel: \cf10 \strokec10 "e"\cf0 \strokec5 , coda: \cf10 \strokec10 "b"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "free"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "freb"\cf0 \strokec5  \},\cb1 \
+\cb3                 \{ onset: \cf10 \strokec10 "y"\cf0 \strokec5 , vowel: \cf10 \strokec10 "u"\cf0 \strokec5 , coda: \cf10 \strokec10 "t"\cf0 \strokec5 , openPronunciation: \cf10 \strokec10 "yoo"\cf0 \strokec5 , closedPronunciation: \cf10 \strokec10 "yut"\cf0 \strokec5  \}\cb1 \
+\cb3             ]\cb1 \
+\cb3         \};\cb1 \
+\
+\cb3         \cf11 \strokec11 // --- State Variables ---\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 let\cf0 \strokec5  currentLevel = \cf12 \strokec12 1\cf0 \strokec5 ;\cb1 \
+\cb3         \cf8 \strokec8 let\cf0 \strokec5  currentWordList = [];\cb1 \
+\cb3         \cf8 \strokec8 let\cf0 \strokec5  currentWordIndex = \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3         \cf8 \strokec8 let\cf0 \strokec5  isDoorOpen = \cf8 \strokec8 true\cf0 \strokec5 ;\cb1 \
+\cb3         \cf8 \strokec8 let\cf0 \strokec5  currentWordObj = \cf8 \strokec8 null\cf0 \strokec5 ;\cb1 \
+\cb3         \cf8 \strokec8 let\cf0 \strokec5  speechSynth = window.speechSynthesis;\cb1 \
+\
+\cb3         \cf11 \strokec11 // --- DOM Elements ---\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  doorEl = document.getElementById(\cf10 \strokec10 'the-door'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  onsetText = document.getElementById(\cf10 \strokec10 'onset-text'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  vowelText = document.getElementById(\cf10 \strokec10 'vowel-text'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  codaText = document.getElementById(\cf10 \strokec10 'coda-text'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  instructionText = document.getElementById(\cf10 \strokec10 'instruction-text'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  wordCounter = document.getElementById(\cf10 \strokec10 'word-counter'\cf0 \strokec5 );\cb1 \
+\cb3         \cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  feedbackBanner = document.getElementById(\cf10 \strokec10 'feedback-banner'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  feedbackIcon = document.getElementById(\cf10 \strokec10 'feedback-icon'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  feedbackTitle = document.getElementById(\cf10 \strokec10 'feedback-title'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  feedbackDesc = document.getElementById(\cf10 \strokec10 'feedback-desc'\cf0 \strokec5 );\cb1 \
+\cb3         \cf8 \strokec8 const\cf0 \strokec5  feedbackVowel = document.getElementById(\cf10 \strokec10 'feedback-vowel'\cf0 \strokec5 );\cb1 \
+\
+\cb3         \cf11 \strokec11 // Shuffle utility\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  shuffleArray(array) \{\cb1 \
+\cb3             \cf8 \strokec8 for\cf0 \strokec5  (\cf8 \strokec8 let\cf0 \strokec5  i = array.length - \cf12 \strokec12 1\cf0 \strokec5 ; i > \cf12 \strokec12 0\cf0 \strokec5 ; i--) \{\cb1 \
+\cb3                 \cf8 \strokec8 const\cf0 \strokec5  j = \cf13 \strokec13 Math\cf0 \strokec5 .floor(\cf13 \strokec13 Math\cf0 \strokec5 .random() * (i + \cf12 \strokec12 1\cf0 \strokec5 ));\cb1 \
+\cb3                 [array[i], array[j]] = [array[j], array[i]];\cb1 \
+\cb3             \}\cb1 \
+\cb3             \cf8 \strokec8 return\cf0 \strokec5  array;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Function to read text aloud using Web Speech API (Triggered manually for self-check)\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  playCurrentWordSound() \{\cb1 \
+\cb3             \cf8 \strokec8 if\cf0 \strokec5  (!speechSynth || !currentWordObj) \cf8 \strokec8 return\cf0 \strokec5 ; \cf11 \strokec11 // Browser doesn't support TTS or no word loaded\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 // Cancel any ongoing speech\cf0 \cb1 \strokec5 \
+\cb3             speechSynth.cancel();\cb1 \
+\
+\cb3             \cf8 \strokec8 const\cf0 \strokec5  textToRead = isDoorOpen ? currentWordObj.openPronunciation : currentWordObj.closedPronunciation;\cb1 \
+\
+\cb3             \cf8 \strokec8 const\cf0 \strokec5  utterance = \cf8 \strokec8 new\cf0 \strokec5  \cf13 \strokec13 SpeechSynthesisUtterance\cf0 \strokec5 (textToRead);\cb1 \
+\cb3             utterance.rate = \cf12 \strokec12 0.8\cf0 \strokec5 ; \cf11 \strokec11 // Speak slightly slower for early readers\cf0 \cb1 \strokec5 \
+\cb3             utterance.pitch = \cf12 \strokec12 1.1\cf0 \strokec5 ; \cf11 \strokec11 // Slightly higher pitch for a friendly tone\cf0 \cb1 \strokec5 \
+\cb3             \cb1 \
+\cb3             speechSynth.speak(utterance);\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Setup a specific level\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  setLevel(level) \{\cb1 \
+\cb3             currentLevel = level;\cb1 \
+\cb3             \cb1 \
+\cb3             \cf11 \strokec11 // Update UI buttons\cf0 \cb1 \strokec5 \
+\cb3             document.querySelectorAll(\cf10 \strokec10 '[id^="btn-level-"]'\cf0 \strokec5 ).forEach(btn => \{\cb1 \
+\cb3                 btn.classList.remove(\cf10 \strokec10 'level-active'\cf0 \strokec5 );\cb1 \
+\cb3                 btn.classList.add(\cf10 \strokec10 'level-inactive'\cf0 \strokec5 );\cb1 \
+\cb3             \});\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 `btn-level-\cf0 \strokec5 $\{level\}\cf10 \strokec10 `\cf0 \strokec5 ).classList.remove(\cf10 \strokec10 'level-inactive'\cf0 \strokec5 );\cb1 \
+\cb3             document.getElementById(\cf10 \strokec10 `btn-level-\cf0 \strokec5 $\{level\}\cf10 \strokec10 `\cf0 \strokec5 ).classList.add(\cf10 \strokec10 'level-active'\cf0 \strokec5 );\cb1 \
+\
+\cb3             \cf11 \strokec11 // Build word list based on level\cf0 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 if\cf0 \strokec5  (level === \cf12 \strokec12 1\cf0 \strokec5 ) \{\cb1 \
+\cb3                 currentWordList = shuffleArray([...wordDatabase.level1]);\cb1 \
+\cb3             \} \cf8 \strokec8 else\cf0 \strokec5  \cf8 \strokec8 if\cf0 \strokec5  (level === \cf12 \strokec12 2\cf0 \strokec5 ) \{\cb1 \
+\cb3                 currentWordList = shuffleArray([...wordDatabase.level2]);\cb1 \
+\cb3             \} \cf8 \strokec8 else\cf0 \strokec5  \cf8 \strokec8 if\cf0 \strokec5  (level === \cf12 \strokec12 3\cf0 \strokec5 ) \{\cb1 \
+\cb3                 \cf11 \strokec11 // Mix of both\cf0 \cb1 \strokec5 \
+\cb3                 currentWordList = shuffleArray([...wordDatabase.level1, ...wordDatabase.level2]).slice(\cf12 \strokec12 0\cf0 \strokec5 , \cf12 \strokec12 30\cf0 \strokec5 ); \cf11 \strokec11 // Take 30 random words\cf0 \cb1 \strokec5 \
+\cb3             \}\cb1 \
+\
+\cb3             currentWordIndex = \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             loadWord();\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Load the current word into the UI\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  loadWord() \{\cb1 \
+\cb3             \cf8 \strokec8 if\cf0 \strokec5  (currentWordIndex >= currentWordList.length) \{\cb1 \
+\cb3                 \cf11 \strokec11 // Reshuffle and start over if they reach the end\cf0 \cb1 \strokec5 \
+\cb3                 currentWordList = shuffleArray([...currentWordList]);\cb1 \
+\cb3                 currentWordIndex = \cf12 \strokec12 0\cf0 \strokec5 ;\cb1 \
+\cb3             \}\cb1 \
+\
+\cb3             currentWordObj = currentWordList[currentWordIndex];\cb1 \
+\cb3             \cb1 \
+\cb3             \cf11 \strokec11 // Update text elements\cf0 \cb1 \strokec5 \
+\cb3             onsetText.textContent = currentWordObj.onset;\cb1 \
+\cb3             vowelText.textContent = currentWordObj.vowel;\cb1 \
+\cb3             codaText.textContent = currentWordObj.coda;\cb1 \
+\cb3             \cb1 \
+\cb3             \cf11 \strokec11 // Reset to OPEN state for new words\cf0 \cb1 \strokec5 \
+\cb3             isDoorOpen = \cf8 \strokec8 true\cf0 \strokec5 ;\cb1 \
+\cb3             doorEl.classList.add(\cf10 \strokec10 'open'\cf0 \strokec5 );\cb1 \
+\cb3             updateVisuals();\cb1 \
+\
+\cb3             \cf11 \strokec11 // Auto-reading removed so students can self-check!\cf0 \cb1 \strokec5 \
+\
+\cb3             \cf11 \strokec11 // Update counter\cf0 \cb1 \strokec5 \
+\cb3             wordCounter.textContent = \cf10 \strokec10 `\cf0 \strokec5 $\{currentWordIndex + \cf12 \strokec12 1\cf0 \strokec5 \}\cf10 \strokec10  / \cf0 \strokec5 $\{currentWordList.length\}\cf10 \strokec10 `\cf0 \strokec5 ;\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Handle door click\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  toggleDoor() \{\cb1 \
+\cb3             isDoorOpen = !isDoorOpen;\cb1 \
+\cb3             \cb1 \
+\cb3             \cf8 \strokec8 if\cf0 \strokec5  (isDoorOpen) \{\cb1 \
+\cb3                 doorEl.classList.add(\cf10 \strokec10 'open'\cf0 \strokec5 );\cb1 \
+\cb3                 \cf11 \strokec11 // Auto-reading removed\cf0 \cb1 \strokec5 \
+\cb3             \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3                 doorEl.classList.remove(\cf10 \strokec10 'open'\cf0 \strokec5 );\cb1 \
+\cb3                 \cf11 \strokec11 // Auto-reading removed\cf0 \cb1 \strokec5 \
+\cb3             \}\cb1 \
+\cb3             \cb1 \
+\cb3             updateVisuals();\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Move to next word\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  nextWord() \{\cb1 \
+\cb3             currentWordIndex++;\cb1 \
+\cb3             loadWord();\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Update markings and feedback based on door state\cf0 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 function\cf0 \strokec5  updateVisuals() \{\cb1 \
+\cb3             \cf8 \strokec8 const\cf0 \strokec5  vowel = currentWordObj.vowel;\cb1 \
+\cb3             \cb1 \
+\cb3             \cf8 \strokec8 if\cf0 \strokec5  (isDoorOpen) \{\cb1 \
+\cb3                 \cf11 \strokec11 // OPEN SYLLABLE\cf0 \cb1 \strokec5 \
+\cb3                 instructionText.textContent = \cf10 \strokec10 "Click the door to close it!"\cf0 \strokec5 ;\cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf11 \strokec11 // Set markings (Macron/Straight line for long vowels)\cf0 \cb1 \strokec5 \
+\cb3                 vowelText.className = \cf10 \strokec10 'letter macron ml-2'\cf0 \strokec5 ; \cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf11 \strokec11 // Update Feedback\cf0 \cb1 \strokec5 \
+\cb3                 feedbackBanner.className = \cf10 \strokec10 "mt-8 w-full max-w-2xl bg-blue-100 border-l-8 border-blue-500 p-4 rounded-r-lg shadow-sm"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackIcon.textContent = \cf10 \strokec10 "\uc0\u55357 \u57002 \u55357 \u56488 "\cf0 \strokec5 ; \cf11 \strokec11 // Open door emoji\cf0 \cb1 \strokec5 \
+\cb3                 feedbackTitle.textContent = \cf10 \strokec10 "Open Syllable"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackTitle.className = \cf10 \strokec10 "text-xl font-bold text-blue-800"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackDesc.className = \cf10 \strokec10 "text-lg text-blue-900 mt-1"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackVowel.textContent = vowel;\cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf11 \strokec11 // Read the word logic (visual representation only here)\cf0 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 const\cf0 \strokec5  fullWordOpen = currentWordObj.onset + vowel;\cb1 \
+\cb3                 feedbackDesc.innerHTML = \cf10 \strokec10 `The door is open! Nothing is blocking the vowel. <br>The vowel <span class="font-bold text-red-600 underline text-2xl uppercase">\cf0 \strokec5 $\{vowel\}\cf10 \strokec10 </span> makes its <b>LONG</b> sound (says its name).<br><span class="text-xl font-bold bg-white px-2 py-1 rounded mt-2 inline-block">Word: \cf0 \strokec5 $\{fullWordOpen\}\cf10 \strokec10 </span>`\cf0 \strokec5 ;\cb1 \
+\
+\cb3             \} \cf8 \strokec8 else\cf0 \strokec5  \{\cb1 \
+\cb3                 \cf11 \strokec11 // CLOSED SYLLABLE\cf0 \cb1 \strokec5 \
+\cb3                 instructionText.textContent = \cf10 \strokec10 "Click the door to open it!"\cf0 \strokec5 ;\cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf11 \strokec11 // Set markings (Breve/Smile for short vowels)\cf0 \cb1 \strokec5 \
+\cb3                 vowelText.className = \cf10 \strokec10 'letter breve ml-2'\cf0 \strokec5 ; \cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf11 \strokec11 // Update Feedback\cf0 \cb1 \strokec5 \
+\cb3                 feedbackBanner.className = \cf10 \strokec10 "mt-8 w-full max-w-2xl bg-purple-100 border-l-8 border-purple-500 p-4 rounded-r-lg shadow-sm"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackIcon.textContent = \cf10 \strokec10 "\uc0\u55357 \u57041 \u55357 \u57002 "\cf0 \strokec5 ; \cf11 \strokec11 // Stop/Closed door emoji\cf0 \cb1 \strokec5 \
+\cb3                 feedbackTitle.textContent = \cf10 \strokec10 "Closed Syllable"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackTitle.className = \cf10 \strokec10 "text-xl font-bold text-purple-800"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackDesc.className = \cf10 \strokec10 "text-lg text-purple-900 mt-1"\cf0 \strokec5 ;\cb1 \
+\cb3                 feedbackVowel.textContent = vowel;\cb1 \
+\cb3                 \cb1 \
+\cb3                 \cf8 \strokec8 const\cf0 \strokec5  fullWordClosed = currentWordObj.onset + vowel + currentWordObj.coda;\cb1 \
+\cb3                 feedbackDesc.innerHTML = \cf10 \strokec10 `The door is closed! The consonant <span class="font-bold text-black text-xl uppercase">\cf0 \strokec5 $\{currentWordObj.coda\}\cf10 \strokec10 </span> blocked the vowel.<br>The vowel <span class="font-bold text-red-600 underline text-2xl uppercase">\cf0 \strokec5 $\{vowel\}\cf10 \strokec10 </span> makes its <b>SHORT</b> sound.<br><span class="text-xl font-bold bg-white px-2 py-1 rounded mt-2 inline-block">Word: \cf0 \strokec5 $\{fullWordClosed\}\cf10 \strokec10 </span>`\cf0 \strokec5 ;\cb1 \
+\cb3             \}\cb1 \
+\cb3         \}\cb1 \
+\
+\cb3         \cf11 \strokec11 // Initialize on load\cf0 \cb1 \strokec5 \
+\cb3         window.onload = \cf8 \strokec8 function\cf0 \strokec5 () \{\cb1 \
+\cb3             setLevel(\cf12 \strokec12 1\cf0 \strokec5 ); \cf11 \strokec11 // Start at level 1\cf0 \cb1 \strokec5 \
+\cb3         \};\cb1 \
+\
+\cb3     \cf6 \strokec6 </\cf7 \strokec7 script\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 body\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf7 \strokec7 html\cf6 \strokec6 >\cf0 \cb1 \strokec5 \
+}
